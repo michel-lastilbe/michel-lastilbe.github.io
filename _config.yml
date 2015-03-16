@@ -1,0 +1,60 @@
+# Site settings
+title: L'astilbe - Gîte et chambres d'hôtes Perigord
+email: gueraud2@wanadoo.fr
+description: > # this means to ignore newlines until "baseurl:"
+  Des vacances dans un environnement calme et preserve location au coeur du Perigord noir a Mauzens et Miremont,
+  pres du Bugue et des Eyzies de Tayac
+baseurl: "" # the subpath of your site, e.g. /blog/
+#url: "http://lastilbe.fr" # the base hostname & protocol for your site
+github_username:  michel-lastilbe
+signoff: Michel Gueraud         # Your name.
+disqus_shortname: # disqus comment thread for post header options. ( leave blank if unwanted. )
+facebook_appid:   # appid for like button, remove from /_includes/share.html if unwanted.
+google_analytics: # set tracking, remove from /javascripts/basic.js if unwanted.
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+      lang: fr
+  -
+    scope:
+      path: _posts/en
+    values:
+      layout: default
+      lang: en
+  -
+    scope:
+      path: _posts/fr
+    values:
+      layout: default
+      lang: fr
+  -
+    scope:
+      path: _posts/es
+    values:
+      layout: default
+      lang: es
+t:
+  en:
+    home:
+      name: "Home"
+      url: ""
+    about:
+      name: "About"
+      url: "/about/"
+  fr:
+    home:
+      name: "Accueil"
+      url: "/"
+    about:
+      name: "À propos"
+      url: "/a-propos/"
+highlighter:      pygments
+permalink: /:title/
+markdown:         redcarpet
+redcarpet:
+  extensions:
+    - smart

@@ -1,0 +1,10 @@
+<header>
+	<a id="go-back-home" href="/"><img src="/images/scribble.png" alt="scribble" width="53" height="59"></a>
+	<p>{{ site.title }}</p>
+	{% assign posts=site.posts | where:"name", page.name | sort: 'path' %}
+	{% for post in posts %}
+	<div class="lang">
+		<a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a>
+	</div>
+	{% endfor %}
+</header>

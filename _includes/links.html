@@ -1,0 +1,5 @@
+<div class="block">
+	{% for menu in site.t[page.lang] %}
+	<a target="{% if menu[1].external %}_blank{% else %}_top{% endif %}" class="main" href="{{ menu[1].url }}">{{ menu[1].name }}</a>
+	{% endfor %}
+</div>
